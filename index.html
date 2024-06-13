@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tic Tac Toe</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&amp;effect=neon|outline|emboss|shadow-multiple">
+    </head>
+    <body>
+        <div class="main">
+            <div class="player_pannel">
+                <div class="playerdetail">
+                    <h2>Enter a player 1 name(X)</h2>
+                <input type="text" id="player1" placeholder="player1">
+                
+                </div>
+                <div class="playerdetail">
+                <h2>Enter a player 2 name(O)</h2>
+                <input type="text" id="player2" placeholder="player2">
+            </div>
+            </div>
+            
+            <div class="tic">
+                <div class="row">
+                    <input type="text" id="b1" onclick="turn1(),check()" readonly>
+                    <input type="text" id="b2" onclick="turn2(),check()" readonly>
+                    <input type="text" id="b3" onclick="turn3(),check()" readonly>
+                </div>
+
+                
+                <div class="row">
+                    <input type="text" id="b4" onclick="turn4(),check()" readonly>
+                    <input type="text" id="b5"  onclick="turn5(),check()" readonly>
+                    <input type="text" id="b6" onclick="turn6(),check()" readonly>
+                </div>
+
+                
+                <div class="row">
+                    <input type="text" id="b7"  onclick="turn7(),check()" readonly>
+                    <input type="text" id="b8" onclick="turn8(),check()" readonly>
+                    <input type="text" id="b9" onclick="turn9(),check()" readonly>
+                </div>
+            </div>
+        
+        <div class="tic2">
+            <div class="row">
+                <input type="text" id="reset" onclick="reset()" value="reset" readonly>
+             </div>
+    </div>
+    </div>
+             <div id="winner"></div>
+        <script src="index.js" async defer></script>
+    </body>
+</html>

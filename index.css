@@ -1,0 +1,129 @@
+body{
+    font-family:"Sofia", sans-serif;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgqTJAC5WC1TlHcTasjmGrUXzPDxUbCsytvQ&s');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: right;
+  
+  background-attachment:fixed;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+    gap:25px;
+    margin-right: 350px;
+    /* background-color: rgb(218, 218, 218); */
+}
+.player_pannel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap:75px;
+}
+input{
+    padding:15px;
+    margin:5px;
+    color:black;
+    cursor: pointer;
+   text-align: center;
+}
+.player_pannel input{
+    border-top-left-radius:33px;
+    border-bottom-left-radius: 33px;
+    border-top-right-radius: 33px;
+    border-bottom-right-radius: 33px;
+    border: 2px solid black;
+    font-size:20px;
+    font-weight: 300;
+    cursor: text;
+    font-family:"Sofia", sans-serif;
+}
+.row input{
+    font-size:24px;
+    font-weight: 700;
+    width:100px;
+    border-top-left-radius:33px;
+    border-bottom-left-radius: 33px;
+    border-top-right-radius: 33px;
+    border-bottom-right-radius: 33px;
+    border: 2px solid black;
+    margin: 15px;
+}
+.tic{
+    box-shadow: 10px 10px 58848px rgb(0, 0, 0);
+    /* border: 2px solid rgb(255, 255, 255) ; */
+    border-radius: 10%;
+}
+#reset{
+    font-family:"Sofia", sans-serif;
+}
+input:hover{
+    background-color:rgb(66, 66, 66) ;
+    color:white;
+}
+.tic2{
+    display: block;
+    align-items: center;
+    margin-left: 550px;
+    margin-top: 25px;
+}
+#winner{
+    font-size:56px;
+    display: block;
+    position: absolute;
+    top:200px;
+    right:220px;
+    z-index: 1;
+    color: #100f20;
+    text-shadow:2px 2px 15px #100f20;
+    font-weight: 800;
+}
+@media only screen and (max-width:1000px){
+    .row input{
+        width:50px;
+        font-size:18px; 
+    }
+    
+    input{
+        padding: 5px;
+    }
+    .main{
+        display: block;
+    }
+    .tic .row{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        flex:3;
+        width:100%;
+    }
+    .tic{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+    }
+    .tic2{
+        display: block;
+        align-items: center;
+        float: left;
+        position: absolute;
+        right: 100px;   
+        top:600px;
+        margin-top:25px;
+    }
+    #winner{
+        display: block;
+        position: absolute;
+        top:700px;
+        left: 25px;
+        margin: 0;
+        background-color: white;
+        opacity: 0.7;
+        width:fit-content
+    }
+}
